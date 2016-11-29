@@ -5,7 +5,8 @@
 }
 body
 {
-	background-color: rgb(3, 14, 0);
+	/*background-color: #333;*/
+	background-image: url("bg3.jpg");
 }
 .header_nav
 {
@@ -19,3 +20,9 @@ body
 	font-size: 3em;
 	color: green;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+

@@ -1,4 +1,4 @@
-	<?php
+<?php
 	include_once("../Modal/modal-choose-type.php");
 	include_once("../Modal/modal-login.php");
 ?>
@@ -20,11 +20,11 @@
 			      		  <span class="icon-bar"></span>
 			      		  <span class="icon-bar"></span>                        
 	      			</button>
-					<a class ="navbar-brand header_font_style" href="#">CampusHire</a>	
+					<a class ="navbar-brand header_font_style" href="welcome.php">CampusHire</a>	
 				</div>
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class ="nav navbar-nav navbar-right">
-						<li><a href="#" data-toggle="modal" data-target="#select-action1" id="login">Login</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#select-action1" id="login">LOG IN</a></li>
 						 <li><a href="#" data-toggle="modal" data-target="#select-action" id="sign-up">SIGN UP</a></li>
 					</ul>
 				</div>

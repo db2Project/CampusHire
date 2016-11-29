@@ -1,3 +1,6 @@
+<?php
+  include_once("../Function/functions.php");
+?>
 <form class="form-signup">
             <div class="modal fade" id="select-action" role="dialog">
               <div class="modal-dialog">
