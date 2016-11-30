@@ -1,3 +1,6 @@
+<?php
+  
+?>
 <form>
   <div class="modal fade" id="select-action1" role="dialog">
   	<div class="modal-dialog">
@@ -16,7 +19,7 @@
             <label>
               <input type="checkbox" value="remember-me"> Remember me
             </label>
-            <button type="button" class="btn btn-primary btn" data-dismiss="modal">Log in</button>
+            <button type="button" class="btn btn-primary btn" data-dismiss="modal" >Log in</button>
         </div>
      </div>
    </div>

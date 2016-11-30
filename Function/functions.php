@@ -28,4 +28,22 @@
              $(this).addClass("active");
         });
         }
+
+        function profile(){
+          document.getElementById("company-profile").style.display = "block";
+          document.getElementById("company-activity").style.display = "none";
+        }
+        function applicant(){
+          document.getElementById("applicant-list").style.display = "block";
+          document.getElementById("company-activity").style.display = "none";
+          document.getElementById("company-profile").style.display = "none";
+          document.getElementById("post-job").style.display = "none";
+        }
+        function postJob(){
+          document.getElementById("post-job").style.display = "block";
+          document.getElementById("company-activity").style.display = "none";
+          document.getElementById("company-profile").style.display = "none";
+          document.getElementById("applicant-list").style.display = "none";
+        }
+
       </script>
