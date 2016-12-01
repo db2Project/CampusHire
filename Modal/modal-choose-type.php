@@ -1,5 +1,6 @@
 <?php
-  include_once("../Function/functions.php");
+  include_once("../Modal/company-form.php");
+  include_once("../Modal/applicant-form.php");
 ?>
 <form class="form-signup">
             <div class="modal fade" id="select-action" role="dialog">
@@ -13,8 +14,8 @@
                     <center>
                       <form class="form-horizontal" >
                         <div class="form-group">
-                          <button class="btn btn-primary btn-block btn-lg" style="width:90%" id="but-comp" onclick="myFunction()" data-dismiss="modal">Company</button>
-                          <button type="button" class="btn btn-primary btn-block btn-lg" style="width:90%" id="but-app" onclick="myFunction1()" data-dismiss="modal" >Applicant</button>
+                          <button type="button" class="btn btn-primary btn-block btn-lg" style="width:90%" id="but-comp" data-toggle="modal" data-target="#select-action2" data-dismiss="modal">Company</button>
+                          <button type="button" class="btn btn-primary btn-block btn-lg" style="width:90%" id="but-app" data-toggle="modal" data-target="#select-action3" data-dismiss="modal" >Applicant</button>
                         </div>
                       </form>
                     </center>

@@ -1,10 +1,19 @@
 <?php
-  include_once("../Function/functions.php");
-  include_once("../Welcome_Page/footer.php");
 ?>
+    <div class="container-fluid">
+<div class="row">
+          <!--  beginning-->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="">Menu<?php ?><span class="sr-only">(current)</span></a></li>
+            <li><a href="#" onclick="profile()">Profile</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="#" onclick="applicant()">View Applicants Account</a></li>
+            <li><a href="#" onclick="postJob()">Post Job Vacancy</a></li>
+          </ul>
+        </div>
 
-        <!-- body -->
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="dashboard-body">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 <div id="applicant-list" style="display:none;">
                   <h1 class="page-header"><span class="glyphicon glyphicon-th-list"></span> List of Applicants</h1>
                 <div class="table-responsive">
@@ -38,6 +47,6 @@
                       <button type="submit" class="btn btn-primary" style="width:80px">Search</button>
               </form>
             </div>
-</div>
-        <!-- end body -->
+
+            </div>
     </div>
