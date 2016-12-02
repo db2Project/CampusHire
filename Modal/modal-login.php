@@ -1,6 +1,3 @@
-<?php
-  
-?>
 <form>
   <div class="modal fade" id="select-action1" role="dialog">
   	<div class="modal-dialog">

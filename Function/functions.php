@@ -17,6 +17,12 @@
           document.getElementById("company-profile").style.display = "none";
           document.getElementById("applicant-list").style.display = "none";
         }
+        function dashboard(){
+          document.getElementById("post-job").style.display = "none";
+          document.getElementById("company-activity").style.display = "block";
+          document.getElementById("company-profile").style.display = "none";
+          document.getElementById("applicant-list").style.display = "none";
+        }
 
         function jobvacany(){
           document.getElementById("list-company").style.display = "none";

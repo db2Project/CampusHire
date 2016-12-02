@@ -1,7 +1,6 @@
 <?php
   include_once("../Function/functions.php");
   include_once("../Welcome_Page/footer.php");
-
 ?>
 <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 <link href="../css/dashboard.css" rel="stylesheet">
@@ -64,12 +63,6 @@
                       <td>ipsum</td>
                       <td>dolor</td>
                     </tr>
-                    <tr>
-                      <td>1,002</td>
-                      <td>amet</td>
-                      <td>consectetur</td>
-                      <td>adipiscing</td>
-                    </tr>
                     </tbody>
                 </table>
               </div>
@@ -82,7 +75,8 @@
                        <div class="col-xs-6 col-sm-4 placeholder">
                           <img  src="../Pictures/bg1.jpg" style="width:250px;height:250px" data-src="holder.js/250x250/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail"/>
                           <h4><span class="glyphicon glyphicon-camera"></span></h4>
-                            <a data-toggle="modal" data-target="#edit" ><span >Click to edit info</span></a>
+                            <?php   include_once("../Modal/applicant-form-edit.php");?>
+                            <a data-toggle="modal" data-target="#select-action10" ><span >Click to edit info</span></a>
                           </div>
                     <div class="col-xs-6 col-sm-8 placeholder pull-left text-justify">
                           <div style="margin-top:5px"><span class="text-muted">Applicant Name :</span><label><?php ?></label><br /></div>
@@ -101,6 +95,13 @@
             <div id="list-job" style="display: none;">
                         <h1 class="page-header"><span class="glyphicon glyphicon-th-list"></span> View Vacant Job</h1>
                         <h2 class="sub-header">List of Vacant Job</h2>
+                        <div class="col-md-10">
+                        <div class="input-group">
+                          <div class="input-group-addon"><span style="color:green" class="glyphicon glyphicon-search"></span></div>
+                          <input required title="Search" type="text" class="form-control" id="tags" name="tags" placeholder="Search Applicant Name">
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary" style="width:80px">Search</button>
                         <div class="table-responsive">
                           <table class="table table-striped">
                             <thead>
@@ -120,19 +121,6 @@
                               </tr>
                           </table>
                         </div>
-                        <form class="navbar-form form-inline pull-right" style="margin-right:3%" method="GET" action="">
-                                <div class="form-group">
-                                  <div class="input-group">
-                                    <div class="input-group-addon"><span style="color:green" class="glyphicon glyphicon-search"></span></div>
-                                    <input required title="Search" type="text" class="form-control" id="tags" name="tags" placeholder="Search Course">
-                                  </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary" style="width:80px">Search</button>
-                        </form>
                       </div>
-
-
-
         </div>
-    <!--  end -->
    </body>

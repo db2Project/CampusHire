@@ -1,13 +1,10 @@
-<?php
-  
-?>
 <form>
-  <div class="modal fade" id="select-action2" role="dialog">
+  <div class="modal fade" id="select-action9" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <b><h3 class="modal-title" id="log-inLabel">Please Log In</h3></b>
+               <b><h3 class="modal-title" id="log-inLabel">Edit Company Account</h3></b>
          </div>
          <div class="modal-body">
           <div class="col-sm-12">
@@ -56,11 +53,9 @@
                 <input type="password"  class="form-control" name="comp-pass" placeholder="Password" required>
                 <br>
               </div>
-            </div>  
+            </div> 
+            <button type="submit" class="btn btn-primary btn">Save</button> 
          </div>
-         <div class="modal-footer">
-            <button type="submit" class="btn btn-primary btn">Register</button>
-        </div>
      </div>
    </div>
   </div>

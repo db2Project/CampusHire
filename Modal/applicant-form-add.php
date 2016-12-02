@@ -1,13 +1,10 @@
-<?php
-  
-?>
 <form>
   <div class="modal fade" id="select-action3" role="dialog">
   	<div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <b><h3 class="modal-title" id="log-inLabel">Applicant Account</h3></b>
+               <b><h3 class="modal-title" id="log-inLabel">Add Applicant Account</h3></b>
          </div>
          <div class="modal-body">
             <div class="col-sm-12">
@@ -97,10 +94,8 @@
                             };
                         </script>
             </div>
-          </div>
-         <div class="modal-footer">
             <button type="submit" class="btn btn-success">Register</button>
-        </div>
+          </div>
      </div>
     </div>
   </div>

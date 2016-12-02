@@ -1,6 +1,9 @@
 <?php
   include_once("../Function/functions.php");
   include_once("../Welcome_Page/footer.php");
+  include_once("../Modal/company-form-edit.php");
+  include_once("../Modal/verification-company.php");
+  include_once("../Modal/post-edit.php");
 ?>
 <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 <link href="../css/dashboard.css" rel="stylesheet">
@@ -37,7 +40,7 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="">Menu<?php ?><span class="sr-only">(current)</span></a></li>
             <li><a href="#" onclick="profile()">Profile</a></li>
-            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="#" onclick="dashboard()">Dashboard</a></li>
             <li><a href="#" onclick="applicant1()">View Applicants Account</a></li>
             <li><a href="#" onclick="postJob()">Post Job Vacancy</a></li>
           </ul>
@@ -54,7 +57,7 @@
               <div style="margin-top:5px"><span class="text-muted" style="margin-top:5px">Company Numnber :</span><label><?php ?></label><br /></div>
               <div style="margin-top:5px"><span class="text-muted" style="margin-top:5px">Username : </span><label><?php ?></label><br /></div>
               <div style="margin-top:5px"><span class="text-muted" style="margin-top:5px">Password : </span><label><?php ?></label><br /></div>
-              <a href="../Controller/welcome.php" onclick="myFunction()"><br><span >Click to edit info</span></a>
+              <a data-toggle="modal" data-target="#select-action9"><br><span >Click to edit info</span></a>
               </div>
 
         <div id="post-job" style="display:none;">
@@ -70,13 +73,22 @@
                 <br>
               </div>
             <div class="col-sm-12">
-                <button type="submit" class="btn btn-success">Post</button>
+                <button type="submit" class="btn btn-success" onclick="dashboard()">Post</button>
               </div>
           </div>
         
 
         <div id="applicant-list" style="display:none;" >
                   <h1 class="page-header"><span class="glyphicon glyphicon-th-list"></span> List of Applicants</h1>
+                <div class="form-group">  
+                  <div class="col-md-10">
+                        <div class="input-group">
+                          <div class="input-group-addon"><span style="color:green" class="glyphicon glyphicon-search"></span></div>
+                          <input required title="Search" type="text" class="form-control" id="tags" name="tags" placeholder="Search Applicant Name">
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary" style="width:80px">Search</button>
+                  </div>    
                 <div class="table-responsive">
                 <table class="table table-striped">
                   <thead>
@@ -98,15 +110,7 @@
                     </tr>
                 </table>
               </div>
-              <form class="navbar-form form-inline pull-right" style="margin-right:3%" method="GET" action="">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <div class="input-group-addon"><span style="color:green" class="glyphicon glyphicon-search"></span></div>
-                          <input required title="Search" type="text" class="form-control" id="tags" name="tags" placeholder="Search Course">
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary" style="width:80px">Search</button>
-              </form>
+             
             </div>
           
 
@@ -132,15 +136,7 @@
                       <td>ipsum</td>
                       <td>dolor</td>
                       <td>sit</td>
-                      <td><span class="glyphicon glyphicon-remove" style="color: red"><span class="glyphicon glyphicon-edit" style="color: blue"></span></td>
-                    </tr>
-                    <tr>
-                      <td>1,002</td>
-                      <td>amet</td>
-                      <td>consectetur</td>
-                      <td>adipiscing</td>
-                      <td>elit</td>
-                      <td><span class="glyphicon glyphicon-remove" style="color: red"><span class="glyphicon glyphicon-edit" style="color: blue"></span></td>
+                      <td><span data-toggle="modal" data-target="#select-action66" class="glyphicon glyphicon-remove" style="color: red">&nbsp;</span><span data-toggle="modal" data-target="#select-action7" class="glyphicon glyphicon-edit" style="color: blue">&nbsp;</span></td>
                     </tr>
                     </tbody>
                 </table>
